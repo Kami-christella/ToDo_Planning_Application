@@ -5,6 +5,7 @@ import { MdDensitySmall } from "react-icons/md";
 import { SiDailymotion } from "react-icons/si";
 import { MdCalendarViewWeek } from "react-icons/md";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import { GiCalendarHalfYear } from "react-icons/gi";
 import { MdDelete } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import axios from 'axios';
@@ -43,8 +44,9 @@ function HomePage() {
                 <div className="">
                    
                     <form className="" onSubmit={handleSubmit(onsend)}>
+                        <div className='firstDiv'> 
      <h1 className="task-header">Make a better Plan <br /> for your life</h1>
-<span className="task-subtext">Whoever you are, whatever you are looking for, <br /> we have the perfect place for you</span>
+<span className="task-subtext">Whoever you are, whatever you are looking for, </span>
 
 <div className="input-group-custom">
   <select {...register("duration", { required: true })}>
@@ -63,19 +65,23 @@ function HomePage() {
 
   <button type="submit">Add task</button>
 </div>
+</div>
 
 <div className="filter-buttons">
   <button type="button"><MdDensitySmall /> All</button>
   <button type="button"><SiDailymotion /> Daily</button>
   <button type="button"><MdCalendarViewWeek /> Weekly</button>
   <button type="button"><MdOutlineCalendarMonth /> Monthly</button>
-  <button type="button"><MdDensitySmall /> Yearly</button>
+  <button type="button"><GiCalendarHalfYear /> Yearly</button>
 </div>
    
 <div className='allTasks'>
   <p>1. Learn React <span><MdModeEditOutline /> <MdDelete /></span></p>
   <p>2. Learn Node.js <span><MdModeEditOutline /> <MdDelete /></span></p>
   <p>3. Learn MongoDB <span><MdModeEditOutline /> <MdDelete /></span></p>
+  <p>4. Learn MongoDB <span><MdModeEditOutline /> <MdDelete /></span></p>
+  <p>5. Learn MongoDB <span><MdModeEditOutline /> <MdDelete /></span></p>
+  <p>6. Learn MongoDB <span><MdModeEditOutline /> <MdDelete /></span></p>
 </div>
 
 
