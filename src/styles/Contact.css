@@ -1,0 +1,25 @@
+.map{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.formClass{
+
+    margin-left: 100px;
+}
+
+.formClass{
+    display: flex;
+    flex-direction: row;
+    gap:200px;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.asteriskIcon{
+    color: red;
+    width: 8px;
+    height: 8px;
+}
