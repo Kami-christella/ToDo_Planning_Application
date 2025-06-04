@@ -214,3 +214,69 @@ body, html {
     font-size: 1rem;
   }
 }
+/* edit functionality added */
+
+/* Add these styles to your Homepage.css file */
+
+.task-item {
+  margin-bottom: 10px;
+}
+
+.edit-task-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  /* background-color: #f8f9fa; */
+  border-radius: 4px;
+  /* border: 1px solid #dee2e6; */
+}
+
+.edit-input {
+  flex: 1;
+  padding: 5px 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.edit-select {
+  padding: 5px 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 100px;
+}
+
+.edit-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.task-duration {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+/* Optional: Add hover effects */
+.edit-input:focus,
+.edit-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Style for task items */
+.allTasks p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.allTasks p:hover {
+  /* background-color: #f8f9fa; */
+}
