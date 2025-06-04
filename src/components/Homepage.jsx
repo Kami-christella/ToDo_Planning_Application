@@ -423,7 +423,7 @@ function HomePage() {
                         // Display mode
                         <p>
                           {index + 1}. {task.taskname} 
-                          <span className="task-duration">({task.duration})</span>
+                          <span className="task-duration">{task.duration}</span>
                           <span>
                             <MdModeEditOutline 
                               onClick={() => handleEditTask(task)}
