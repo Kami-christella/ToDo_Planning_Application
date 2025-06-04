@@ -182,7 +182,7 @@ function HomePage() {
   const fetchTasks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5001/task/getAllTask");
+      const response = await axios.get("//https://todoplanbackend-2.onrender.com/task/getAllTask");
       
       // Ensure response.data is an array
       const tasksData = Array.isArray(response.data) ? response.data : 
@@ -223,7 +223,8 @@ function HomePage() {
       };
 
       const response = await axios.post(
-        "http://localhost:5001/task/createTask",
+        "//https://todoplanbackend-2.onrender.com/task/createTask",
+        //https://todoplanbackend-2.onrender.com
         formData,
         {
           headers: {
