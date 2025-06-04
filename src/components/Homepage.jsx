@@ -46,9 +46,13 @@ function HomePage() {
                     <form className="" onSubmit={handleSubmit(onsend)}>
                         <div className='firstDiv'> 
      <h1 className="task-header">Make a better Plan <br /> for your life</h1>
-<span className="task-subtext">Whoever you are, whatever you are looking for, </span>
+{/* <span className="task-subtext">Whoever you are, whatever you are looking for, 
+
+ </span> */}
 
 <div className="input-group-custom">
+  <span className="task-subtext">Whoever you are, whatever you are looking for,  <br />we have the perfect place for you</span>
+
   <select {...register("duration", { required: true })}>
     <option value="">Duration</option>
     <option value="1">Daily Tasks</option>
@@ -65,6 +69,7 @@ function HomePage() {
 
   <button type="submit">Add task</button>
 </div>
+
 </div>
 
 <div className="filter-buttons">
